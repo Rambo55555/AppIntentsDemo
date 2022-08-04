@@ -71,7 +71,7 @@ struct AddNewSongView: View {
                             _ = try SongManager.shared.addSong(name: name, singer: singer, album: album, publishDate: publishDate, image: image, isFree: isFree)
                             dismiss()
                         } catch let error {
-                            print("Couldn't add book: \(error.localizedDescription)")
+                            print("Couldn't add song: \(error.localizedDescription)")
                         }
                     }, label: {
                         Text("Save")

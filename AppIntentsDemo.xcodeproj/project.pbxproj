@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412F514D289BC0A100545396 /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F514C289BC0A100545396 /* Shortcuts.swift */; };
+		412F514F289BC91900545396 /* IntentsSongEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F514E289BC91900545396 /* IntentsSongEntity.swift */; };
 		414FD5992897B0B500760438 /* AppIntentsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414FD5982897B0B500760438 /* AppIntentsDemoApp.swift */; };
 		414FD59B2897B0B500760438 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414FD59A2897B0B500760438 /* ContentView.swift */; };
 		414FD59D2897B0B700760438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414FD59C2897B0B700760438 /* Assets.xcassets */; };
@@ -14,7 +16,7 @@
 		414FD5AA2897B0B800760438 /* AppIntentsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414FD5A92897B0B800760438 /* AppIntentsDemoTests.swift */; };
 		414FD5B42897B0B800760438 /* AppIntentsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414FD5B32897B0B800760438 /* AppIntentsDemoUITests.swift */; };
 		414FD5B62897B0B800760438 /* AppIntentsDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414FD5B52897B0B800760438 /* AppIntentsDemoUITestsLaunchTests.swift */; };
-		41E7580C2897BAF1000AF5D3 /* HelloWorldIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E7580B2897BAF1000AF5D3 /* HelloWorldIntent.swift */; };
+		41E7580C2897BAF1000AF5D3 /* Intents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E7580B2897BAF1000AF5D3 /* Intents.swift */; };
 		41E758132897C509000AF5D3 /* StringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E758122897C509000AF5D3 /* StringView.swift */; };
 		41E758162898BE09000AF5D3 /* SongEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E758152898BE09000AF5D3 /* SongEntity+CoreDataClass.swift */; };
 		41E758192898C02F000AF5D3 /* SongModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41E758172898C02F000AF5D3 /* SongModel.xcdatamodeld */; };
@@ -48,7 +50,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		417510C9289A350C00A28F1D /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		412F514C289BC0A100545396 /* Shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcuts.swift; sourceTree = "<group>"; };
+		412F514E289BC91900545396 /* IntentsSongEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentsSongEntity.swift; sourceTree = "<group>"; };
 		414FD5952897B0B500760438 /* AppIntentsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIntentsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		414FD5982897B0B500760438 /* AppIntentsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntentsDemoApp.swift; sourceTree = "<group>"; };
 		414FD59A2897B0B500760438 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,7 +76,7 @@
 		414FD5AF2897B0B800760438 /* AppIntentsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppIntentsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		414FD5B32897B0B800760438 /* AppIntentsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntentsDemoUITests.swift; sourceTree = "<group>"; };
 		414FD5B52897B0B800760438 /* AppIntentsDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntentsDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		41E7580B2897BAF1000AF5D3 /* HelloWorldIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldIntent.swift; sourceTree = "<group>"; };
+		41E7580B2897BAF1000AF5D3 /* Intents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intents.swift; sourceTree = "<group>"; };
 		41E758122897C509000AF5D3 /* StringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringView.swift; sourceTree = "<group>"; };
 		41E758152898BE09000AF5D3 /* SongEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SongEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		41E758182898C02F000AF5D3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -163,7 +180,9 @@
 		41E7580D2897BAFE000AF5D3 /* Intents */ = {
 			isa = PBXGroup;
 			children = (
-				41E7580B2897BAF1000AF5D3 /* HelloWorldIntent.swift */,
+				41E7580B2897BAF1000AF5D3 /* Intents.swift */,
+				412F514C289BC0A100545396 /* Shortcuts.swift */,
+				412F514E289BC91900545396 /* IntentsSongEntity.swift */,
 			);
 			path = Intents;
 			sourceTree = "<group>";
@@ -222,6 +241,7 @@
 				414FD5912897B0B500760438 /* Sources */,
 				414FD5922897B0B500760438 /* Frameworks */,
 				414FD5932897B0B500760438 /* Resources */,
+				417510C9289A350C00A28F1D /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
@@ -343,11 +363,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E7582E2898DBED000AF5D3 /* AddNewSongView.swift in Sources */,
-				41E7580C2897BAF1000AF5D3 /* HelloWorldIntent.swift in Sources */,
+				41E7580C2897BAF1000AF5D3 /* Intents.swift in Sources */,
 				41E7581F2898CA00000AF5D3 /* CustomErrors.swift in Sources */,
 				41E7581B2898C2E8000AF5D3 /* PersistentController.swift in Sources */,
 				41E758302898DD05000AF5D3 /* ImagePickerView.swift in Sources */,
 				41E758322898E6BD000AF5D3 /* SongEntity+CoreDataProperties.swift in Sources */,
+				412F514F289BC91900545396 /* IntentsSongEntity.swift in Sources */,
 				41E758132897C509000AF5D3 /* StringView.swift in Sources */,
 				414FD59B2897B0B500760438 /* ContentView.swift in Sources */,
 				41E758242898CD25000AF5D3 /* SongViewModel.swift in Sources */,
@@ -359,6 +380,7 @@
 				41E758192898C02F000AF5D3 /* SongModel.xcdatamodeld in Sources */,
 				41E7582B2898DAC7000AF5D3 /* SongDetailView.swift in Sources */,
 				41E758212898CBB6000AF5D3 /* SongListView.swift in Sources */,
+				412F514D289BC0A100545396 /* Shortcuts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +534,7 @@
 		414FD5BA2897B0B800760438 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +563,7 @@
 		414FD5BB2897B0B800760438 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

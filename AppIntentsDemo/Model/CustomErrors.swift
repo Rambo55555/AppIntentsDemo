@@ -21,7 +21,7 @@ enum Error: Swift.Error, CustomLocalizedStringResourceConvertible {
             case .deletionFailed: return "An error occured trying to delete the song"
             case .unknownError(let message): return "An unknown error occurred: \(message)"
             case .unknownId(let id): return "No songs with an ID matching: \(id)"
-            case .notFound: return "Book not found"
+            case .notFound: return "Song not found"
             case .coreDataSave: return "Couldn't save to CoreData"
         }
     }

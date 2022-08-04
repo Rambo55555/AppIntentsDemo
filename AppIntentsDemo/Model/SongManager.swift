@@ -130,7 +130,7 @@ extension SongManager {
         do {
             try saveContext()
         } catch let error {
-            print("Couldn't add dummy books: \(error.localizedDescription)")
+            print("Couldn't add deault songs: \(error.localizedDescription)")
             throw error
         }
     }

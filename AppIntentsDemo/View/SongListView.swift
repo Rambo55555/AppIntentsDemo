@@ -69,7 +69,7 @@ struct SongListView: View {
             do {
                 try context.save()
             } catch let error {
-                print("Couldn't delete book: \(error.localizedDescription)")
+                print("Couldn't delete song: \(error.localizedDescription)")
             }
         }
     }
