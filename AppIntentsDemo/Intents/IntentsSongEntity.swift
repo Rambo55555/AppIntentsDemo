@@ -127,7 +127,7 @@ struct IntentsSongQuery: EntityPropertyQuery {
         let context = PersistenceController.shared.container.viewContext
         let request: NSFetchRequest<SongEntity> = SongEntity.fetchRequest()
         let predicate = NSCompoundPredicate(type: mode == .and ? .and : .or, subpredicates: comparators)
-        request.fetchLimit = limit ?? 5
+        request.fetchLimit = limit ?? 30000
         request.predicate = predicate
 //        request.sortDescriptors = sortedBy.map({
 //            NSSortDescriptor(key: $0.by, ascending: $0.order == .ascending)

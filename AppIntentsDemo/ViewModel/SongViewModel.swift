@@ -14,6 +14,7 @@ class SongViewModel: ObservableObject  {
     @Published var path: [SongEntity] = []
     @Published var showingAddSong = false
     @Published var showingImagePicker = false
+    @Published var showingDeleteAllConfirmation = false
     
     // Opens a specific Book detail view
     func navigateTo(song: SongEntity) {

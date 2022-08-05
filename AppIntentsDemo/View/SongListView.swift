@@ -45,20 +45,33 @@ struct SongListView: View {
             .navigationDestination(for: SongEntity.self) { song in
                 SongDetailView(song: song)
             }
-            .navigationTitle("Library")
+            .navigationTitle("Library | \(songs.count) songs")
             .toolbar {
-                ToolbarItem {
+                //ToolbarItem {
+                    Button {
+                        vm.showingDeleteAllConfirmation = true
+                    } label: {
+                        Label("Add Song", systemImage: "trash")
+                    }
                     Button {
                         vm.showingAddSong = true
                     } label: {
                         Label("Add Song", systemImage: "plus")
                     }
-                }
+                //}
             }
             .sheet(isPresented: $vm.showingAddSong) {
                 AddNewSongView()
                     .environment(\.managedObjectContext, context)
                     .environmentObject(vm)
+            }
+            .confirmationDialog("Are you sure?", isPresented: $vm.showingDeleteAllConfirmation) {
+                Button("Yes") {
+                    withAnimation {
+                        deleteAllSongs()
+                    }
+                }
+                Button("No", role: .cancel) {}
             }
         }
     }
@@ -73,6 +86,20 @@ struct SongListView: View {
             }
         }
     }
+    
+    private func deleteAllSongs() {
+        songs.forEach { song in
+            context.delete(song)
+            do {
+                try context.save()
+            } catch let error {
+                print("Couldn't delete song: \(error.localizedDescription)")
+            }
+        }
+        
+    }
+    
+    
 }
 
 struct SongListView_Previews: PreviewProvider {

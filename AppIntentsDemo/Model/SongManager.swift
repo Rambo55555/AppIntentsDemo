@@ -100,32 +100,34 @@ extension SongManager {
         
         let cal = Calendar.current
         
-        let song1 = SongEntity(context: context)
-        song1.id = UUID()
-        song1.name = "七里香"
-        song1.singer = "周杰伦"
-        song1.album = "七里香"
-        song1.publishDate = DateComponents(calendar: cal, year: 2004, month: 08, day: 3).date
-        song1.isFree = true
-        song1.image = UIImage(named: "七里香")?.jpegData(compressionQuality: 1)
-        
-        let song2 = SongEntity(context: context)
-        song2.id = UUID()
-        song2.name = "Mojito"
-        song2.singer = "周杰伦"
-        song2.album = "最伟大的作品"
-        song2.publishDate = DateComponents(calendar: cal, year: 2022, month: 06, day: 12).date
-        song2.isFree = true
-        song2.image = UIImage(named: "Mojito")?.jpegData(compressionQuality: 1)
-        
-        let song3 = SongEntity(context: context)
-        song3.id = UUID()
-        song3.name = "一路向北"
-        song3.singer = "周杰伦"
-        song3.album = "十一月的肖邦"
-        song3.publishDate = DateComponents(calendar: cal, year: 2005, month: 06, day: 24).date
-        song3.isFree = true
-        song3.image = UIImage(named: "一路向北")?.jpegData(compressionQuality: 1)
+        for i in 0..<10000 {
+            let song1 = SongEntity(context: context)
+            song1.id = UUID()
+            song1.name = "七里香"
+            song1.singer = "周杰伦"
+            song1.album = "七里香"
+            song1.publishDate = DateComponents(calendar: cal, year: 2004, month: 08, day: 3).date
+            song1.isFree = true
+            song1.image = UIImage(named: "七里香")?.jpegData(compressionQuality: 1)
+            
+            let song2 = SongEntity(context: context)
+            song2.id = UUID()
+            song2.name = "Mojito"
+            song2.singer = "周杰伦"
+            song2.album = "最伟大的作品"
+            song2.publishDate = DateComponents(calendar: cal, year: 2022, month: 06, day: 12).date
+            song2.isFree = true
+            song2.image = UIImage(named: "Mojito")?.jpegData(compressionQuality: 1)
+            
+            let song3 = SongEntity(context: context)
+            song3.id = UUID()
+            song3.name = "一路向北"
+            song3.singer = "周杰伦"
+            song3.album = "十一月的肖邦"
+            song3.publishDate = DateComponents(calendar: cal, year: 2005, month: 06, day: 24).date
+            song3.isFree = true
+            song3.image = UIImage(named: "一路向北")?.jpegData(compressionQuality: 1)
+        }
         
         do {
             try saveContext()
